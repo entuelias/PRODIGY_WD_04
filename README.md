@@ -1,7 +1,7 @@
 # 🌐 Personal Portfolio Website
 
 ## 📌 Task Overview
-This project is a **personal portfolio website** designed to showcase my **skills, projects, and accomplishments** as a web developer. The website is visually appealing, responsive, and structured to highlight my professional journey.
+This project is a **personal portfolio website** designed to showcase my **skills, projects,interest,cv and education** as a web developer. The website is visually appealing, responsive, and structured to highlight my professional journey.
 
 
 ## 🛠️ Technologies Used
@@ -14,12 +14,8 @@ This project is a **personal portfolio website** designed to showcase my **skill
 - **Fully responsive design** 📱💻
 - **Smooth navigation & interactivity** 🏄
 
-## 📷 Preview
-![Portfolio Website Screenshot](![image](https://github.com/user-attachments/assets/68d3a1c0-3e2d-4a3c-929b-f95d994afebd)
-)
-
 ## 🔗 Live Demo
-[Visit my Portfolio](#)  
+[Visit my Portfolio](https://ent-portfolio.netlify.app/)  
 
 ## 🛠️ Setup & Installation
 1. Clone the repository:
