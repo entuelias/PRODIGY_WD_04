@@ -1,0 +1,499 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+}
+/* Body Styling */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Header Styling */
+header {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar .nav-links {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar .nav-links li {
+  margin: 0 15px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover,
+.navbar .nav-links a.active {
+  color: #000000;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  margin-left: 15px;
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+main {
+  width: 100%;
+  padding: 20px;
+}
+.about {
+  padding: 20px 20px;
+}
+.profile-image {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  width: 100%;              
+}
+
+.profile-image img {
+  width: 100%;              
+  max-width: 300px;         
+  height: auto;            
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.about h1 {
+  font-size: 32px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.about p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 20px;
+}
+.personal-details {
+  font-size: 16px;
+}
+
+.personal-details h2 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.personal-details li {
+  margin-bottom: 10px;
+}
+
+.personal-details li::before {
+  content: ">";
+  color: #33c6a4; /* Use the specified color for the bullet */
+  font-weight: bold;
+  margin-right: 8px;
+}
+.personal-details ul {
+  list-style: none;
+}
+.skills-section h2 {
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.progress {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.val {
+  color: #0b0b0b;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.progress-bar-wrap {
+  width: 100%;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #33c6a4;
+  width: var(--percent, 0%);
+  transition: width 0.5s ease-in-out;
+  border-radius: 5px;
+}
+
+/* unique responsiveness */
+@media (min-width: 480px) and (max-width: 767px) {
+  /* for mobile landscape here */
+  .container {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start; 
+    gap: 20px; 
+  }
+
+  /* Profile Image Styling */
+  .profile-image {
+    width: 50%; 
+  }
+
+  .profile-image img {
+    width: 100%;
+    max-width: none; 
+    height: auto;
+  }
+
+  /* About Content Styling */
+  .about-content {
+    flex: 1;
+    padding-left: 20px; 
+  }
+
+  
+  .skills-section {
+    margin-top: 40px;
+  }
+  .skills-section h2{
+    text-align: left;
+  }
+
+
+
+  .left-side,
+  .right-side {
+    width: 60%; 
+  }
+
+ 
+
+  .personal-details li {
+    width: 100%; 
+  }
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* tablet protrait */
+  .profile-image {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    width: 100%;              
+  }
+  
+  .profile-image img {
+    width: 100%;              
+    max-width: 300px;         
+    height: auto;            
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .about h1 {
+    font-size: 32px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .about p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  .personal-details {
+    font-size: 16px;
+  }
+  
+  .personal-details h2 {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .personal-details li {
+    margin-bottom: 10px;
+  }
+  
+  .personal-details li::before {
+    content: ">";
+    color: #33c6a4; /* Use the specified color for the bullet */
+    font-weight: bold;
+    margin-right: 8px;
+  }
+  .personal-details ul {
+    list-style: none;
+  }
+  .skills-section h2 {
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .progress {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .skill {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  
+  .val {
+    color: #0b0b0b;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .progress-bar-wrap {
+    width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .progress-bar {
+    height: 10px;
+    background-color: #33c6a4;
+    width: var(--percent, 0%);
+    transition: width 0.5s ease-in-out;
+    border-radius: 5px;
+  } 
+}
+
+
+
+
+@media (min-width: 1024px) {
+  .about-content {
+    flex: 1;
+    
+  }
+
+  .about h1 {
+    font-size: 32px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .about p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 20px;
+  }
+
+  .profile-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .container {
+    display: flex;
+    align-items: flex-start; /* Align items to the start (top) */
+    gap: 20px; /* Space between the image and content */
+  }
+  .profile-image, 
+  .about-content {
+    flex: 1; /* Both the image and content will take equal space */
+  }
+
+  /* Optional: Adjust the personal details section if needed */
+  .personal-details ul {
+    list-style: none; /* Remove default bullet points */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Split into two columns */
+    gap: 5px;
+  }
+
+  /* Skills section styles */
+  .skills-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .left-side,
+  .right-side {
+    width: 48%; /* Each side will take 48% of the container width */
+  }
+  
+  /* Progress bars */
+  .progress-bar-wrap {
+    width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .progress-bar {
+    height: 10px;
+    background-color: #33c6a4;
+    width: var(--percent, 0%);
+    transition: width 0.5s ease-in-out;
+    border-radius: 5px;
+  }
+}
+
+/* Footer Styling */
+footer {
+  background-color: #f5f5f5; /* Light gray background for footer */
+  padding: 20px;
+  text-align: center;
+  color: #333;
+}
+
+footer p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Social Icons in Footer */
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+footer .social-icons li {
+  margin: 0 15px;
+}
+
+footer .social-icons a {
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+footer .social-icons a:hover {
+  color: #007bff; /* Change icon color on hover */
+}
+#tg {
+  color: #0088cc;
+}
+#youtube {
+  color: #ff0000;
+}
+#fb {
+  color: #1877f2;
+}
+#linkedin {
+  color: #0077b5;
+}
+#instagram {
+  background: linear-gradient(
+    45deg,
+    #833ab4,
+    #e4405f,
+    #f58529
+  ); /* Instagram gradient colors */
+  -webkit-background-clip: text;
+  color: transparent;
+  text-decoration: none;
+  font-size: 24px;
+  transition: opacity 0.3s ease;
+}
+.navbar .toggle-menu {
+  display: none; /* Hidden by default */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  /* Tablet */
+  .navbar .nav-links {
+    display: none; /* Hide navigation links */
+  }
+
+  .social-icons {
+    display: flex; /* Ensure social icons are visible */
+    justify-content: flex-end;
+  }
+
+  .navbar .toggle-menu {
+    display: block; /* Show toggle menu icon */
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+
+  .logo {
+    flex-grow: 1; /* Center the logo */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Mobile */
+  header {
+    padding: 10px 0;
+  }
+
+  .social-icons {
+    display: none;
+  }
+
+  .navbar .toggle-menu {
+    margin-right: 15px;
+  }
+}
+
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+}

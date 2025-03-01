@@ -1,0 +1,228 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;          /* Prevents content from exceeding container's width */
+  height: auto;             /* Adjusts height based on content */
+
+  
+ 
+}
+body,
+html {
+  height: 100%;
+}
+/* Body Styling */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Header Styling */
+header {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar .nav-links {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar .nav-links li {
+  margin: 0 15px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover,
+.navbar .nav-links a.active {
+  color: #000000;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  margin-left: 15px;
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+main {
+  width: 100%;
+  flex-grow: 1;
+}
+
+.hero {
+  background-image: url("images/background.jpg"); /* Replace with the actual path to your image */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  color: rgb(3, 3, 3);
+  text-align: center;
+  height: 100vh;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 150px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  text-decoration: none;
+  background-color: #33c6a4; /* Background color of the button */
+  color: white;
+  padding: 10px 20px;
+
+  font-size: 16px;
+  border-radius: 25px; /* Rounded corners for the button */
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #28a085; /* Slightly darker shade on hover */
+}
+/* Footer Styling */
+footer {
+  background-color: #f5f5f5; /* Light gray background for footer */
+  padding: 20px;
+  text-align: center;
+  color: #333;
+}
+
+footer p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Social Icons in Footer */
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+footer .social-icons li {
+  margin: 0 15px;
+}
+
+footer .social-icons a {
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+footer .social-icons a:hover {
+  color: #007bff; /* Change icon color on hover */
+}
+#tg {
+  color: #0088cc;
+}
+#youtube {
+  color: #ff0000;
+}
+#fb {
+  color: #1877f2;
+}
+#linkedin {
+  color: #0077b5;
+}
+#instagram {
+  background: linear-gradient(
+    45deg,
+    #833ab4,
+    #e4405f,
+    #f58529
+  ); /* Instagram gradient colors */
+  -webkit-background-clip: text;
+  color: transparent;
+  text-decoration: none;
+  font-size: 24px;
+  transition: opacity 0.3s ease;
+}
+.navbar .toggle-menu {
+  display: none; /* Hidden by default */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) { /* Tablet */
+  .navbar .nav-links {
+    display: none; /* Hide navigation links */
+  }
+
+  .social-icons {
+    display: flex; /* Ensure social icons are visible */
+    justify-content: flex-end;
+  }
+
+ 
+
+  .navbar .toggle-menu {
+    display: block; /* Show toggle menu icon */
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+
+  .logo {
+    flex-grow: 1; /* Center the logo */
+  }
+}
+
+@media (max-width: 480px) { /* Mobile */
+  header {
+    padding: 10px 0; 
+  }
+
+  .social-icons {
+   display: none;
+  }
+
+  .navbar .toggle-menu {
+    margin-right: 15px; 
+  }
+}
+
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+}
